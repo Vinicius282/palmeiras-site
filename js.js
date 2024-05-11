@@ -41,7 +41,7 @@ xmlContainer.appendChild(link);
           var sobreText = $(this).find("sobre").text();
           sobreText = sobreText.replace(/\n/g, "<br>");
   
-          var card = $('<div class="card"><p class="procurado">Pugilista</p> <img class="foto" src="' + $(this).find("id").text() + '.jpg"><p class="vivo"></p> <p class="nome">' + $(this).find("nome").text() + '</p> <p>' + $(this).find("alcnha").text() + '</p> <p class="rec"> <img class="berrys" src="">' + $(this).find("recompensa").text() + '</p><p>' + $(this).find("status").text() + '</p><div>');
+          var card = $('<div class="card"><p class="procurado">Jogador</p> <img class="foto" src="' + $(this).find("id").text() + '.jpg"><p class="vivo"></p> <p class="nome">' + $(this).find("nome").text() + '</p> <p>' + $(this).find("alcnha").text() + '</p> <p class="rec"> <img class="berrys" src="">' + $(this).find("recompensa").text() + '</p><p>' + $(this).find("status").text() + '</p><div>');
   
           var sobreTextDiv = $('<div class="sobre-text"></div>').html(sobreText);
   
