@@ -5,7 +5,7 @@ var id = 0;
 $.ajax(url)
     .done(function(xml){
         $(xml).find("pirata").each(function(){
-            $("#cards").append('<div class="card"><a href="individual.html?id='+$(this).find("id").text()+'"><p class="procurado">Pugilista</p> <img class="foto"src="'+ $(this).find("id").text() +'.jpg"><p class="vivo"></p> <p class="nome">'+ $(this).find("nome").text() +'</p> <p>'+ $(this).find("alcnha").text()+'<\p> <p class="rec"> <img class="berrys" src="">'+ $(this).find("recompensa").text()+' </p><p> '+ $(this).find("stats").text()+'</a> </p><\div>');
+            $("#cards").append('<div class="card"><a href="individual.html?id='+$(this).find("id").text()+'"><p class="procurado">Jogador</p> <img class="foto"src="'+ $(this).find("id").text() +'.jpg"><p class="vivo"></p> <p class="nome">'+ $(this).find("nome").text() +'</p> <p>'+ $(this).find("alcnha").text()+'<\p> <p class="rec"> <img class="berrys" src="">'+ $(this).find("recompensa").text()+' </p><p> '+ $(this).find("stats").text()+'</a> </p><\div>');
         });
     })
     .fail(function(){
